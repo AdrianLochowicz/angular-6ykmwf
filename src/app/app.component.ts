@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   name = 'Angular 5';
 
-  komunikat:string;
+  komunikat: string;
 nowyKomunikat: Komunikat;
 
   ngOnInit() {
