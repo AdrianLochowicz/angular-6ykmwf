@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './hello.component.html',
-  styleUrls: [ './hello.component.css' ]
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {
-  name = 'Angular';
+export class AppComponent implements OnInit {
+  name = 'Angular 5';
+
+  komunikat:string;
+
+ 
+  ngOnInit() {
+    this.komunikat = [
+  'Ala ma kota',
+  'Kot ma dosc Ali',
+  'Kot i Ala drą ze sobą koty'
+];
+  }
+}
 }
