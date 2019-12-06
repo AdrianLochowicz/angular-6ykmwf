@@ -17,7 +17,7 @@ nowyKomunikat: Komunikat;
   'Kot ma dosc Ali',
   'Kot i Ala drą ze sobą koty'
 ];
-this.nowyKomunikat = new Komunikat('Nowy komunikat', new Date(), true);
+this.nowyKomunikat = new Komunikat('Treść pierwszego komunikatu', new Date(), true);
   }
 }
 import { Komunikat } from './komunikat';
