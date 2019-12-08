@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Komunikat } from './komunikat';
 
 @Component({
   selector: 'my-app',
@@ -8,16 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   name = 'Angular 5';
 
-  komunikat: string;
-nowyKomunikat: Komunikat;
+  komunikaty: Komunikat[]
 
   ngOnInit() {
-    this.komunikat = [
-  'Ala ma kota',
-  'Kot ma dosc Ali',
-  'Kot i Ala drą ze sobą koty'
-];
-this.nowyKomunikat = new Komunikat(['Treść pierwszego komunikatu', new Date(), true);
+  this.komunikaty = [
+      new Komunikat('Treść pierwszego komunikatu', new Date, false),
+      new Komunikat('Treść drugiego komunikatu', new Date, true),
+      new Komunikat('Treść trzeciego komunikatu', new Date, false)
+    ];
   }
 }
-import { Komunikat } from './komunikat';

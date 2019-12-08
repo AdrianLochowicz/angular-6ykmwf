@@ -2,10 +2,7 @@
 
 <div>
   <p *ngFor="let k of komunikaty">
-    {{k}}
+    <span *ngIf=k.wazny>WAŻNE!</span>
+    {{k.tresc}} ({{k.dataDodania | date:'medium'}})
   </p>
-</div>
-
-<div>
-  {{nowyKomunikat.tresc}} ({{nowyKomunikat.dataDodania | date:'medium'}})
 </div>
