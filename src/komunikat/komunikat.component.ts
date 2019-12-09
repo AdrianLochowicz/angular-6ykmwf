@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-komunikat',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KomunikatComponent implements OnInit {
 
-@input() komunikcik: any[];
+  @Input() komunikaciki: any[];
 
   constructor() { }
 
