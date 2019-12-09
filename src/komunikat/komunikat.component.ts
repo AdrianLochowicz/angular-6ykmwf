@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KomunikatComponent implements OnInit {
 
-@input() komunikcik: any[]
+@input() komunikcik: any[];
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
