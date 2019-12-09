@@ -1,3 +1,8 @@
-<p>
-komunikat works!
-</p>
+
+
+<div>
+  <p *ngFor="let k of komunikcik">
+    <span *ngIf=k.wazny>WAŻNE!</span>
+    {{k.tresc}} ({{k.dataDodania | date:'medium'}})
+  </p>
+</div>
