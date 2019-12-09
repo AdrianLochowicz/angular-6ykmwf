@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./komunikat.component.css']
 })
 export class KomunikatComponent implements OnInit {
-
+name = 'lab3';
 @input() komunikcik: any[];
 
   constructor() { }
