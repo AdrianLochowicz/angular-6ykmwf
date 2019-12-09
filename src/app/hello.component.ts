@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello.component.css'],
 })
 export class HelloComponent implements OnInit {
-
+@Input() name: string;
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
